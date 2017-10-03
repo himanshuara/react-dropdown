@@ -28,7 +28,7 @@ class Dropdown extends Component {
 
   _onSelect(value,isInternal){
     var options = this.props.options,
-    selectedOption = {};
+    selectedOption;
 
     selectedOption = value ? Object.assign({},options[value]) : {};
     this.setState({
